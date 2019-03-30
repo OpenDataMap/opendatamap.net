@@ -1,0 +1,42 @@
+body {
+  font-family: "Assistant", sans-serif; }
+
+#section-1-hello {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background-color: #157384; }
+  #section-1-hello .parallax-container {
+    width: 100%;
+    height: 100%; }
+  #section-1-hello:before {
+    background-size: 100% auto !important;
+    background: url("/assets/images/background.png") no-repeat fixed center;
+    background-size: cover;
+    opacity: 0.25;
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+  #section-1-hello .title-wrapper {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    z-index: 10;
+    position: relative; }
+    #section-1-hello .title-wrapper .title {
+      color: #ffffff;
+      font-size: 4.5rem;
+      line-height: 110%;
+      font-weight: 300; }
+    #section-1-hello .title-wrapper .subtitle {
+      font-size: 4.5rem;
+      line-height: 110%;
+      font-weight: 300;
+      color: #000000; }
+
+/*# sourceMappingURL=main.css.map */
