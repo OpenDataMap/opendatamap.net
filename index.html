@@ -1,25 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>OpenDataMap</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <script src="https://cdn.labcode.de/libs/jquery/3.3.1/jquery.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.labcode.de/libs/materialize/1.0.0/css/materialize.min.css"
-          integrity="sha256-OweaP/Ic6rsV+lysfyS4h+LM6sRwuO3euTYfr6M124g=" crossorigin="anonymous"/>
-    <script src="https://cdn.labcode.de/libs/materialize/1.0.0/js/materialize.min.js"
-            integrity="sha256-U/cHDMTIHCeMcvehBv1xQ052bPSbJtbuiw4QA9cTKz0=" crossorigin="anonymous"></script>
-
-    <script src="/assets/js/main.js"></script>
-
-    <link rel="stylesheet" href="https://cdn.labcode.de/fonts/assistant/assistant.css"
-          integrity="sha256-uCCi7zCyWOg1njVfZ/JlFTU0dG/9I95rHzn/UQawXdk=" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://cdn.labcode.de/fonts/fontawesome/5.3.1/css/all.min.css"
-          integrity="sha256-YE3PHxFphlX3UEa7kvmKqpR34cFrAcX8QV54eUOT/7k=" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="/assets/css/main.css">
-</head>
-<body>
+---
+layout: page
+---
 <section id="section-1-hello">
     <div class="row wrapper">
         <div class="container">
@@ -33,16 +14,19 @@
                     <div class="circles-flex-outer-wrapper">
                         <div class="circles-wrapper row">
                             <div class="col s12 m6 l4">
-                                <div class="circle tooltipped" data-tooltip="Beispiel Karte Bonn/Rhein-Sieg" onclick="window.location.href = 'https://rhein-sieg.opendatamap.net'">
+                                <div class="circle tooltipped" data-tooltip="Beispiel Karte Bonn/Rhein-Sieg"
+                                     onclick="window.location.href = 'https://rhein-sieg.opendatamap.net'">
                                     <span class="icon"><i class="fas fa-map"></i></span>
                                 </div>
                             </div>
                             <div class="col s12 m6 l4">
-                                <div class="circle tooltipped" data-tooltip="Sieh unseren Code bei GitHub" onclick="window.location.href = 'https://github.com/OpenDataMap'"><span
+                                <div class="circle tooltipped" data-tooltip="Sieh unseren Code bei GitHub"
+                                     onclick="window.location.href = 'https://github.com/OpenDataMap'"><span
                                         class="icon"><i class="fab fa-github"></i></span></div>
                             </div>
                             <div class="col s12 m6 l4 not-first-row">
-                                <div class="circle tooltipped" data-tooltip="Lies die Dokumentation" onclick="window.location.href = 'https://doc.opendatamap.net'">
+                                <div class="circle tooltipped" data-tooltip="Lies die Dokumentation"
+                                     onclick="window.location.href = 'https://doc.opendatamap.net'">
                                     <span class="icon"><i class="fas fa-book"></i></span>
                                 </div>
                             </div>
@@ -53,74 +37,53 @@
         </div>
     </div>
 </section>
-<p>
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-    elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-    eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-    dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+<section id="section-2-basic-information">
+    <h2 class="center">Was ist die OpenDataMap?</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <h4 class="bold">Worum geht's?</h4>
+                <p class="information-text">
+                    Die OpenDataMap ist eine modular aufgebaute Kartenl&ouml;sung für unterschiedlichste offene
+                    Datenformate. Der unterschied zu anderen Karten ist, dass auf der OpenDataMap die lokalen Daten aus
+                    mehreren Quellen zusammengefasst sind, sodass ein interessierter B&uuml;rger f&uuml;r seine*ihre
+                    lokalen Daten nur noch eine Website braucht.
+                </p>
+            </div>
+            <div class="col s12 m6">
+                <h4 class="bold">Wie kann ich mitmachen?</h4>
+                <p class="information-text">
+                    Super, dass du mitmachen m&ouml;chtest! Du kannst dich auf verschiedenste Arten einbringen.
+                    <br><br>
+                    Du willst:
+                </p>
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header">mitprogrammieren</div>
+                        <div class="collapsible-body">
+                            <span>
+                                Wir k&ouml;nnen immer Leute brauchen, die mit uns weiterentwickeln! Wenn du einen Bug gefunden hast oder dir ein Feature w&uuml;nschst kannst du gerne in unserem <a
+                                    href="https://github.com/OpenDataMap/opendatamap">GitHub</a> ein Issue oder noch besser einen Pull Request erstellen. Wenn du aus der Region Bonn/Rhein-Sieg kommst kannst du gerne mal zu einem Meetup im <a
+                                    href="https://codeforbonnrheinsieg.de">OK Lab Bonn/Rhein-Sieg</a> kommen. Bei sonstigen Fragen kannst du auch gerne an kontakt (&auml;t) opendatamap.net schreiben.
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">eine eigene Karte betreiben</div>
+                        <div class="collapsible-body"><span>Super dass du eine Karte betreiben willst, am besten kontaktierst du uns via E-Mail an kontakt (&auml;t) opendatamap.net um dir bei der Einrichtung zur helfen.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="center">
+            <img src="/assets/images/codeforbonnrheinsieg-logo.svg" alt="Logo Code for Bonn/Rhein-Sieg"
+                 class="logo-oklab">
+            <p class="information-text">Die OpenDataMap ist ein Projekt <br> des OK-Labs Bonn/Rhein-Sieg</p>
+        </div>
+    </div>
+</section>
 
-    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
-    nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
-    duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
 
-    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-    consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
-    eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
-    delenit augue duis dolore te feugait nulla facilisi.
-
-    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim
-    assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-    lobortis nisl ut aliquip ex ea commodo consequat.
-
-    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
-    nulla facilisis.
-
-    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
-    ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-    amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed
-    tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero
-    voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-    eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-
-    Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-    diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-    sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-    duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-    gubergren, no sea takimata sanctus.
-
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-    elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-    eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-    dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
-    nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
-    duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-
-    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-    consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
-    eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
-    delenit augue duis dolore te feugait nulla facilisi.
-
-    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim
-    assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-    lobortis nisl ut aliquip ex ea commodo
-</p></body>
-</html>
+<script src="/assets/js/main.js"></script>
+<link rel="stylesheet" href="/assets/css/home.css">
