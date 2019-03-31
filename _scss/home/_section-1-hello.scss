@@ -40,22 +40,35 @@
 
         .title {
           color: #ffffff;
-          font-size: 4.5rem;
           line-height: 110%;
           font-weight: 300;
+          @media screen and (min-width: 601px) {
+            font-size: 4.5rem;
+          }
+          @media screen and (max-width: 601px) {
+            font-size: 3.5rem;
+          }
         }
 
         .subtitle {
-          font-size: 4.5rem;
           line-height: 110%;
           font-weight: 300;
           color: #000000;
+          @media screen and (min-width: 601px) {
+            font-size: 4.5rem;
+          }
+          @media screen and (max-width: 601px) {
+            font-size: 3.5rem;
+          }
         }
       }
 
       .circles-buttons {
         @media screen and (min-width: 601px) {
           flex: 1;
+        }
+        @media screen and (max-width: 601px) {
+          margin: 50px 0;
         }
         .circles-flex-outer-wrapper {
           width: 100%;
