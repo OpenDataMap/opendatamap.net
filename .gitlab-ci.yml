@@ -1,0 +1,18 @@
+before_script:
+- apt-get update -qq
+- apt-get install -qq git
+# Setup SSH deploy keys
+- 'which ssh-agent || ( apt-get install -qq openssh-client )'
+- eval $(ssh-agent -s)
+- ssh-add <(echo "$SSH_PRIVATE_KEY")
+- mkdir -p ~/.ssh
+
+deploy_production:
+  type: deploy
+  environment:
+    name: production
+    url: https://opendatamap.net
+  script:
+    - ssh -o StrictHostKeyChecking=no -p $SSH_PORT ci@lupus.infra.labcode.de "cd /var/www/opendatamap.net/opendatamap.net/ && git checkout master && git reset --hard HEAD && git pull origin master && docker run --rm --volume="$PWD:/srv/jekyll" -e JEKYLL_UID=1001 -e JEKYLL_GID=1001 -t jekyll/builder:3.8.5 jekyll build && exit"
+  only:
+    - master
